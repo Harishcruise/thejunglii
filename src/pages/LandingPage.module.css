@@ -1,0 +1,261 @@
+.headerTitle{
+    color: "#FFFFFF" ;
+    font-size: "22px" ;
+    font-weight: 500;
+}
+.headerTitle:hover{
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+}
+
+.fixedBackground{
+  width: 100%;
+  height: 720px;
+  background-image: url("https://i.pinimg.com/originals/47/0a/19/470a19a36904fe200610cc1f41eb00d9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.marqueeTag{
+    width: 100%;
+    height: 90px;
+    padding-top: 20px;
+}
+
+.bookingContainer{
+    width: 100%;
+    height: 1200px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.bookingText{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #898989;
+}
+
+.tabSwitchContainer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 30px;
+}
+
+.tabSwitchText:hover{
+    color: #F0D318;
+    cursor: pointer;
+}
+
+.cardContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 3rem;
+    margin-left: 80px;
+    margin-top: 70px;
+}
+
+@media (min-width: 600px) {
+    .cardContainer { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .cardContainer { grid-template-columns: repeat(3, 1fr); }
+  }
+  
+.bookBtn{
+    margin-left: 190px;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #F0D318;
+    color: #1e1e1e;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bookBtn:hover{
+    width: 150px;
+    height: 50px;
+    background-color: #FFFFFF;
+    color: #B4A335;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid #B4A335;
+}
+
+.boxShadow:hover{
+    box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.3) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px, rgba(255, 255, 255, 0.05) 25px 25px;
+    cursor: pointer;
+}
+
+.aboutUsContainer{
+    width: 100%;
+    height: 700px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #000000;
+}
+
+.aboutUsText{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #898989;
+}
+
+.aboutUsSubContainer{
+    display: flex;
+    margin-top: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    gap: 50px;
+}
+
+.aboutUscont1{
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    gap: 20px;
+    color: #919191;
+    border-right: solid;
+    border-right-width: 1px;
+    border-right-color: #898989;
+}
+
+.aboutUscont2{
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    gap: 20px;
+    color: #919191;
+    border-right: solid;
+    border-right-width: 1px;
+    border-right-color: #898989;
+}
+
+.aboutUscont3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #919191;
+}
+
+.jungliiContainer{
+    width: 100%;
+    height: 1150px;
+    padding-top: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #000000;
+}
+
+.jungliiText{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #898989;
+}
+
+.contentContainer{
+    display: flex;
+}
+
+.contentImageContainer{
+    flex: 0.5;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.contentTextContainer{
+    flex:0.5;
+    margin-top: 60px;
+    gap: 20px;
+    color: #919191;
+    font-size: 24px;
+}
+
+.socialContainer{
+    width: 100%;
+    height: 300px;
+    padding-top: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #000000;
+}
+
+.socialText{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #898989;
+}
+
+.socialBtnCont{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contactUsContainer{
+    width: 100%;
+    height: 930px;
+    padding-top: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #000000;
+}
+
+.contactUsText{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #898989;
+}
+
+.contactUsContentContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    gap:40px
+}
+
+.contactUsBtn{
+    width: 350px;
+    height: 50px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 30px;
+}
+
+.contactUsBtn:hover{
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    height: 370px;
+}

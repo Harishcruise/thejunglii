@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-link{
+  color: "#FFFFFF" !important;
+    font-size: "22px" !important;
+    font-weight: 500;
+}
