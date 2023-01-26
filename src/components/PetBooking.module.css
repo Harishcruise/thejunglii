@@ -1,0 +1,86 @@
+.container{
+    display: flex;
+}
+
+.calenderContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.timeContainer{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 400px;
+    background-color: #1E1E1E ;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cont1{
+    flex: 0.2;
+    display: flex;
+    color: #FFFFFF;
+    gap:50px;
+    align-items: center;
+}
+.cont2{
+    flex: 0.5;
+    display: flex;
+    color: #FFFFFF;
+    gap:30px;
+    align-items: center;
+    border-top: dotted;
+    border-bottom: dotted;
+}
+.cont3{
+    flex: 0.2;
+    display: flex;
+    color: #FFFFFF;
+    gap:50px;
+    align-items: center;
+}
+
+.btnCont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.slotBtn{
+    width: 120px;
+    height: 40px;
+    color: #FFFFFF;
+    border-radius: 30px;
+    border-color: #F0D318;
+    background-color: #1E1E1E;
+}
+
+.slotBtn:hover{
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.backBtn{
+    color: #F0D318;
+}
+
+.backBtn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.petContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 120px;
+    color: #FFFFFF;
+    padding-left: 60px;
+    padding-right: 60px;
+}

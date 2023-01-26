@@ -1,34 +1,17 @@
 import React from 'react'
 import Style from './LandingPage.module.css'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Card from 'react-bootstrap/Card';
+
 import insta from '../assets/insta.png'
 import fb from '../assets/fb.png'
 import wapp from '../assets/wapp.png'
+import Booking from '../components/Booking'
+import PetBooking from '../components/PetBooking'
+
+import { Outlet } from 'react-router-dom'
 
 function LandingPage() {
   return (
     <>
-    <Navbar expand="lg" sticky="top" style={{backgroundColor:"rgb(0,0,0,0.5)"}}>
-      <Container fluid>
-        {/* <Navbar.Brand href="#">Navbar scroll</Navbar.Brand> */}
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll" style={{justifyContent:'center',height:'60px'}}>
-          <Nav            
-            style={{ maxHeight: '100px',display:'flex',gap:'20px'}}
-            navbarScroll
-          >
-            <Nav.Link href="#action1"><div style={{color:'white',fontSize:'18px'}} className={Style.headerTitle}>Home</div></Nav.Link>
-            <Nav.Link href="#action2"><div style={{color:'white',fontSize:'18px'}} className={Style.headerTitle}>Our Team</div></Nav.Link>
-            <Nav.Link href="#"><div style={{color:'white',fontSize:'18px'}} className={Style.headerTitle}>FAQ</div></Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-
-
     <div className={Style.fixedBackground}>
 
     </div>
@@ -42,76 +25,9 @@ function LandingPage() {
       <h1 style={{color:'white'}}>Book Your Slots Now</h1>
     </div>
 
-    <div>
-      <div className={Style.tabSwitchContainer}>
-        <h4 className={Style.tabSwitchText}>
-          All services
-        </h4>
-        <h4 className={Style.tabSwitchText}>
-        Basic
-        </h4>
-        <h4 className={Style.tabSwitchText}>
-        Farm Friends
-        </h4>
-        <h4 className={Style.tabSwitchText}>
-        Reptile Crush
-        </h4>
-      </div>
-
-      <div className={Style.cardContainer}>
-
-      <Card style={{ width: '24rem',height:'26rem' }} className={Style.boxShadow}>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80" />
-      <Card.Body>
-      <Card.Title>JUNGLII’S PETTING ZONE</Card.Title>
-        <Card.Text>
-        30MIN | 399
-        </Card.Text>
-        <button className={Style.bookBtn}>BOOK THIS</button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '24rem',height:'26rem' }} className={Style.boxShadow}>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80" />
-      <Card.Body>
-        <Card.Title>JUNGLII’S FARM FRIENDS</Card.Title>
-        <Card.Text>
-        30MIN | 399
-        </Card.Text>
-        <button className={Style.bookBtn}>BOOK THIS</button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '24rem',height:'26rem' }} className={Style.boxShadow}>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80" />
-      <Card.Body>
-        <Card.Title>JUNGLII’S REPTILE CRUSH</Card.Title>
-        <Card.Text>
-        30MIN | 399
-        </Card.Text>
-        <button className={Style.bookBtn}>BOOK THIS</button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '24rem',height:'26rem' }} className={Style.boxShadow}>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80" />
-      <Card.Body>
-        <Card.Title>JUNGLII’S VIP ZONE</Card.Title>
-        <Card.Text>
-        30MIN | 399
-        </Card.Text>
-        <button className={Style.bookBtn}>BOOK THIS</button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '24rem',height:'26rem' }} className={Style.boxShadow}>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80" />
-      <Card.Body>
-        <Card.Title>JUNGLII’S VVIP ZONE</Card.Title>
-        <Card.Text>
-        30MIN | 399
-        </Card.Text>
-        <button className={Style.bookBtn}>BOOK THIS</button>
-      </Card.Body>
-    </Card>
-      </div>
-    </div>
+    {/* <Booking /> */}
+    {/* <PetBooking /> */}
+    <Outlet />
     
     </div>
 
@@ -211,19 +127,6 @@ function LandingPage() {
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5784.930529455133!2d80.24933269599128!3d12.910569186976995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d4f6e73d667%3A0x14c2f96767f180b2!2sJUNGLII%20-%20PETTING%20ZOO%20(Concept%20Petshop)!5e0!3m2!1sen!2sin!4v1674664807125!5m2!1sen!2sin" width="100%" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-
-    <div className={Style.footer}>
-    <div className={Style.socialBtnCont}>
-        <img width={40} height={40} src={insta} alt=''/>
-        <img width={40} height={40}  src={fb} alt='' />
-      </div>
-
-      <h6 style={{color:"#898989"}}>Copyright © 2022 Junglii's Petting Zoo & Exotic Pet Shop - All Rights Reserved.</h6>
-
-      <div style={{display:"flex",flexDirection:"row",gap:"40px",color:"#898989"}}><h5>Privacy Policy</h5><h5> Refund Policy</h5></div>
-      <div style={{width:"10%",height:"2px",borderBottom:"solid",borderBottomWidth:"1px",borderBottomColor:"#898989"}}></div>
-      <h6 style={{color:"#898989"}}>Powered by TamedPets</h6>
-    </div>
     </>
   )
 }

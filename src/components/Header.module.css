@@ -1,0 +1,10 @@
+.headerTitle{
+    color: "#FFFFFF" ;
+    font-size: "22px" ;
+    font-weight: 500;
+}
+.headerTitle:hover{
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+}
