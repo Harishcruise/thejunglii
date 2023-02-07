@@ -10,10 +10,14 @@ import FarmBooking from './components/FarmBooking';
 import ReptileBooking from './components/ReptileBooking';
 import VipBooking from './components/VipBooking';
 import VvipBooking from './components/VvipBooking';
+import store from './store';
+import CartPage from './pages/CartPage';
+import { Provider } from "react-redux";
 
 function App() {
   return (
    <>
+   <Provider store={store}>
    <Header/>
    <Routes>
    <Route path='/' element={<Navigate to='/Home'/>}/>
@@ -26,8 +30,10 @@ function App() {
    <Route path='vvipBooking' element={<VvipBooking/>}/>
    </Route> 
    <Route path='/Team' element={<OurTeamPage/>}/> 
+   <Route path='/Cart' element={<CartPage/>}/>
    </Routes>
    <Footer />
+   </Provider>
    </>
   );
 }

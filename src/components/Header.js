@@ -4,7 +4,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Style from './Header.module.css'
 import { BsCart3 } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
+import Badge from '@mui/material/Badge';
+import {CheckoutState} from '../redux/CheckoutSlice'
+import { useSelector } from "react-redux";
+import { IconButton } from '@mui/material';
 function Header() {
+  const navigate = useNavigate()
+  const checkoutValue = useSelector(CheckoutState);
   return (
 <>
 <Navbar expand="lg" sticky="top" style={{backgroundColor:"rgb(0,0,0,0.5)"}}>
@@ -21,7 +28,9 @@ function Header() {
             <Nav.Link href="/FAQ"><div style={{color:'white',fontSize:'18px'}} className={Style.headerTitle}>FAQ</div></Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Nav.Link href="/Cart"><BsCart3 style={{marginRight:"30px"}} width={100} height={100} color='#FFFFFF'/></Nav.Link>
+        <IconButton aria-label="cart" style={{marginRight:"30px"}}>
+       <Badge badgeContent={checkoutValue.length} color="success"><BsCart3 onClick={()=>(navigate("/Cart"))} width={100} height={100} color='#FFFFFF'/></Badge>
+       </IconButton>
       </Container>
     </Navbar>
 </>

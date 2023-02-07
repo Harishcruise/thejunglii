@@ -1,11 +1,11 @@
 import React from 'react'
 import Style from './LandingPage.module.css'
-
+import IconButton from '@mui/material/IconButton';
 import insta from '../assets/insta.png'
 import fb from '../assets/fb.png'
 import wapp from '../assets/wapp.png'
-import Booking from '../components/Booking'
-import PetBooking from '../components/PetBooking'
+import Badge from '@mui/material/Badge';
+import { BsCart3 } from "react-icons/bs";
 
 import { Outlet } from 'react-router-dom'
 
@@ -21,12 +21,11 @@ function LandingPage() {
     </marquee>
 
     <div className={Style.bookingContainer}>
+  
     <div className={Style.bookingText}>
       <h1 style={{color:'white'}}>Book Your Slots Now</h1>
     </div>
 
-    {/* <Booking /> */}
-    {/* <PetBooking /> */}
     <Outlet />
     
     </div>
@@ -126,7 +125,10 @@ function LandingPage() {
     </div>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5784.930529455133!2d80.24933269599128!3d12.910569186976995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d4f6e73d667%3A0x14c2f96767f180b2!2sJUNGLII%20-%20PETTING%20ZOO%20(Concept%20Petshop)!5e0!3m2!1sen!2sin!4v1674664807125!5m2!1sen!2sin" width="100%" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     
 
+    
+     
     </>
   )
 }

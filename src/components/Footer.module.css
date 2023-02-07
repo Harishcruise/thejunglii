@@ -5,6 +5,7 @@
     gap:40px;
     height: 370px;
     background-color: #000000;
+    font-family: 'Inter', sans-serif;
 }
 
 .socialBtnCont{
@@ -12,4 +13,5 @@
     display: flex;
     justify-content: center;
     gap: 40px;
+    font-family: 'Inter', sans-serif;
 }

@@ -1,28 +1,61 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import Style from './FarmBooking.module.css'
 import { useNavigate } from 'react-router-dom';
+import {CheckoutState, setCheckoutValue} from '../redux/CheckoutSlice'
+import { useSelector, useDispatch } from "react-redux";
+import moment from 'moment/moment';
 function FarmBooking() {
+    const checkoutValue = useSelector(CheckoutState);
+    const dispatch = useDispatch();
     const navigate = useNavigate()
-    const [value, onChange] = useState(new Date());
+    const [dateValue, setDate] = useState(new Date());
+    const [value, setValue] = useState({
+          id:"2",
+          ticketName:"JUNGLII'S FARM Friends",
+          timeSlot:"",
+          hours:"",
+          amount:"500 RS",
+          date:moment(dateValue).format('DD-MM-YYYY'),
+          count:1
+    })
+
+  const timeSlot =(slot,duration)=>{
+    setValue({...value,timeSlot:slot,hours:duration})
+    console.log(value)
+  }  
+
+  const addToCart =() =>{
+    dispatch(setCheckoutValue(value));
+    console.log(checkoutValue)
+  }
+
+  const onChange =(e) =>{
+      setDate(e)
+      console.log(dateValue)
+  }
+
+  useEffect(()=>{
+    setValue({...value,date:moment(dateValue).format('DD-MM-YYYY')})
+  },[dateValue])
   return (
     <div className={Style.container}>
     
     <div className={Style.calenderContainer}>
 
     <h4 className={Style.backBtn} onClick={()=>{navigate("/Home")}}> ← View all Services </h4>
-     <Calendar onChange={onChange} value={value} />
+     <Calendar onChange={(e)=>onChange(e)} value={dateValue} />
      
      <div className={Style.timeContainer}>
      
      <div className={Style.cont1}>
        <h4>Morning</h4>
        <div className={Style.btnCont}>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
        </div>
      </div>
 
@@ -30,13 +63,13 @@ function FarmBooking() {
      <div className={Style.cont2}>
        <h4>Afternoon</h4>
        <div className={Style.btnCont}>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
        </div>
      </div>
 
@@ -44,14 +77,16 @@ function FarmBooking() {
      <div className={Style.cont3}>
        <h4>Evening</h4>
        <div className={Style.btnCont}>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
-        <button className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
        </div>
      </div>
 
      </div>
+
+     <button className={Style.slotBtn} onClick={addToCart} >Add To Cart</button>
     </div>
      <div>
 

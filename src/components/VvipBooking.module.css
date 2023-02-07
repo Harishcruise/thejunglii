@@ -7,6 +7,7 @@
     flex-direction: column;
     gap: 40px;
     padding-top: 50px;
+    font-family: 'Inter', sans-serif;
 }
 
 .timeContainer{
@@ -20,6 +21,7 @@
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 .cont1{
@@ -28,6 +30,7 @@
     color: #FFFFFF;
     gap:50px;
     align-items: center;
+    font-family: 'Inter', sans-serif;
 }
 .cont2{
     flex: 0.5;
@@ -37,6 +40,7 @@
     align-items: center;
     border-top: dotted;
     border-bottom: dotted;
+    font-family: 'Inter', sans-serif;
 }
 .cont3{
     flex: 0.2;
@@ -50,6 +54,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    font-family: 'Inter', sans-serif;
 }
 
 .slotBtn{
@@ -59,20 +64,24 @@
     border-radius: 30px;
     border-color: #F0D318;
     background-color: #1E1E1E;
+    font-family: 'Inter', sans-serif;
 }
 
 .slotBtn:hover{
     color: black;
     background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }
 
 .backBtn{
     color: #F0D318;
+    font-family: 'Inter', sans-serif;
 }
 
 .backBtn:hover{
     cursor: pointer;
     text-decoration: underline;
+    font-family: 'Inter', sans-serif;
 }
 
 .petContainer{
@@ -83,4 +92,5 @@
     color: #FFFFFF;
     padding-left: 60px;
     padding-right: 60px;
+    font-family: 'Inter', sans-serif;
 }
