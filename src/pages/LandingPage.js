@@ -64,7 +64,7 @@ function LandingPage() {
     <div className={Style.contentContainer}>
 
     <div className={Style.contentImageContainer}>
-      <img src='https://img1.wsimg.com/isteam/ip/3b365560-5245-47cc-b9ac-77e98d410987/157482133-56a0012e3df78cafda9f8faf.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true' alt=''/>
+      <img className={Style.img} src='https://img1.wsimg.com/isteam/ip/3b365560-5245-47cc-b9ac-77e98d410987/157482133-56a0012e3df78cafda9f8faf.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true' alt=''/>
     </div>
 
     <div className={Style.contentTextContainer}>
@@ -81,7 +81,7 @@ function LandingPage() {
 
     <div className={Style.socialContainer}>
     <div className={Style.socialText}>
-      <h1 style={{color:'white'}}>JUNGLII is a ‘Exotic– Pet Shop’ with consulting services.</h1>
+      <p style={{color:'white'}}>JUNGLII is a ‘Exotic– Pet Shop’ with consulting services.</p>
     </div>
 
     <div className={Style.socialBtnCont}>
@@ -92,7 +92,7 @@ function LandingPage() {
 
     <div className={Style.contactUsContainer}>
     <div className={Style.contactUsText}>
-      <h1 style={{color:'white'}}>Contact Us</h1>
+      <p style={{color:'white'}}>Contact Us</p>
     </div>
 
     <div className={Style.contactUsContentContainer}>
@@ -112,7 +112,7 @@ function LandingPage() {
 
         <h3>Client Visit Timing.</h3>
 
-        <div style={{display:"flex",flexDirection:"row",gap:"10px"}}><h5 style={{color:"#898989"}}>Open today </h5><h5 style={{color:"#F0D318"}}>10:30 am – 07:30 pm </h5></div>
+        <div style={{display:"flex",flexDirection:"row",gap:"20px"}}><h5 style={{color:"#898989"}}>Open today </h5><div style={{marginTop:"1px"}}><p style={{color:"#F0D318"}}>10:30 am – 07:30 pm </p></div></div>
 
         <div style={{display:"flex",flexDirection:"column",alignItems:"center"}} >
         <h5 style={{color:"#898989"}}>* Priority for Online Booking.</h5>

@@ -23,9 +23,9 @@ function Header() {
             style={{ maxHeight: '100px',display:'flex',gap:'20px'}}
             navbarScroll
           >
-            <Nav.Link href="/Home"><div style={{color:'white',fontSize:'18px'}} className={Style.headerTitle}>Home</div></Nav.Link>
-            <Nav.Link href="/Team"><div style={{color:'white',fontSize:'18px'}} className={Style.headerTitle}>Our Team</div></Nav.Link>
-            <Nav.Link href="/FAQ"><div style={{color:'white',fontSize:'18px'}} className={Style.headerTitle}>FAQ</div></Nav.Link>
+            <Nav.Link onClick={()=>(navigate("/Home"))}><div style={{color:'white',fontSize:'18px'}} className={Style.headerTitle}>Home</div></Nav.Link>
+            <Nav.Link onClick={()=>(navigate("/Team"))}><div style={{color:'white',fontSize:'18px'}} className={Style.headerTitle}>Our Team</div></Nav.Link>
+            <Nav.Link onClick={()=>(navigate("/FAQQ"))}><div style={{color:'white',fontSize:'18px'}} className={Style.headerTitle}>FAQ</div></Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <IconButton aria-label="cart" style={{marginRight:"30px"}}>

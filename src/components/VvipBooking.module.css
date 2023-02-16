@@ -2,6 +2,51 @@
     display: flex;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .container{
+      flex-direction: column-reverse;
+    }
+    .petContainer{
+      padding-top: 40px !important;
+      color: #FFFFFF;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      font-family: 'Inter', sans-serif;
+    }
+    .img{
+      width: 300px;
+      height: 200px;
+    }
+    .timeContainer{
+      display: flex;
+      flex-direction: column;
+      width: 295px !important;
+      height: 750px !important;
+      background-color: #1E1E1E ;
+      border-radius: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-family: 'Inter', sans-serif;
+    }
+    .cont1{
+      flex-direction: column;
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+  .cont2{
+      flex-direction: column;
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+  .cont3{
+      flex-direction: column;
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+  }
+
 .calenderContainer{
     display: flex;
     flex-direction: column;
@@ -84,6 +129,7 @@
 }
 
 .backBtn{
+    margin-top: 30px;
     color: #F0D318;
     font-family: 'Inter', sans-serif;
 }

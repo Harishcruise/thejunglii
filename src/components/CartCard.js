@@ -39,9 +39,9 @@ function CartCard({ticketName,duration,slot,amount,date,id}) {
   return (
     <div className={Style.cardContainer}>
         
-        <div style={{display:"flex",gap:"60px"}}>
+        <div className={Style.cont} style={{display:"flex",gap:"60px"}}>
 
-        <img width={375} height={185} style={{borderRadius:"10px"}} alt='' src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80" />
+        <img className={Style.img} style={{borderRadius:"10px"}} alt='' src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80" />
         
         <div className={Style.content}>
             <h4>{ticketName}</h4>

@@ -42,11 +42,13 @@ function VvipBooking() {
   },[dateValue])
 
   return (
+    <>
+    <h4 className={Style.backBtn} onClick={()=>{navigate("/Home")}}> ← View all Services </h4>
     <div className={Style.container}>
     
     <div className={Style.calenderContainer}>
 
-    <h4 className={Style.backBtn} onClick={()=>{navigate("/Home")}}> ← View all Services </h4>
+    
      <Calendar onChange={(e)=>onChange(e)} value={dateValue} />
      
      <div className={Style.timeContainer}>
@@ -100,10 +102,10 @@ function VvipBooking() {
      
      <div>
      <h3>JUNGLII'S VVIP VISIT</h3>
-     <h4>30 min|₹399(Pay later)</h4>
+     <h4>30 min  |  ₹399(Pay later)</h4>
      </div>
 
-     <img alt='' width={550} height={350} style={{borderRadius:"10px",borderColor:"#FFFFFF"}} src='https://img1.wsimg.com/isteam/ip/3b365560-5245-47cc-b9ac-77e98d410987/blob-0010.png/:/rs=h:%7B640%7D'/>
+     <img className={Style.img} alt='' width={550} height={350} style={{borderRadius:"10px",borderColor:"#FFFFFF"}} src='https://img1.wsimg.com/isteam/ip/3b365560-5245-47cc-b9ac-77e98d410987/blob-0010.png/:/rs=h:%7B640%7D'/>
 
      <h5 style={{color:"#898989"}}>::::::::::::: Exotic Pet Keeping– An Advanced Connect :::::::::::::::</h5>
 
@@ -140,6 +142,7 @@ South American Horned Frogs i.e Pacman Frog Morphs</h5>
 
 
     </div>
+    </>
   )
 }
 

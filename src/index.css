@@ -19,6 +19,10 @@ code {
     font-weight: 500;
 }
 
+.navbar-toggler {
+ background-color: #ffffff !important;
+}
+
 .carousel .slider-wrapper {
   overflow: hidden;
   margin: auto;
