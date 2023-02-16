@@ -36,13 +36,7 @@ export const CheckoutSlice = createSlice({
         },
 
         removeCheckoutValue: (state,action) =>{
-            const newArray = [...state.value];
-            console.log(action.payload.id)
-            newArray.filter(function(val){
-                return val.id !== action.payload.id
-            })
-            state.value = newArray
-            console.log(state.value)
+            state.value = state.value.filter(val => val.id !== action.payload.id)
         }
     }
 })
