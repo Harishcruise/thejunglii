@@ -33,11 +33,21 @@ export const CheckoutSlice = createSlice({
             newArray[index].count = action.payload.count;
 
             state.value = newArray
+        },
+
+        removeCheckoutValue: (state,action) =>{
+            const newArray = [...state.value];
+            console.log(action.payload.id)
+            newArray.filter(function(val){
+                return val.id !== action.payload.id
+            })
+            state.value = newArray
+            console.log(state.value)
         }
     }
 })
 
-export const { setCheckoutValue,setCount } = CheckoutSlice.actions;
+export const { setCheckoutValue,setCount,removeCheckoutValue } = CheckoutSlice.actions;
 
 export const CheckoutState = (state) => state.Checkout.value;
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CartCard from '../components/CartCard'
 import Style from './CartPage.module.css'
 import {CheckoutState} from '../redux/CheckoutSlice'
@@ -6,6 +6,15 @@ import { useSelector, useDispatch } from "react-redux";
 function CartPage() {
   const checkoutValue = useSelector(CheckoutState);
     const dispatch = useDispatch();
+    const [totalAmount,setTotalAmount] = useState(0)
+  useEffect(()=>{
+    var temp = 0 ;
+    checkoutValue.map((value)=>{
+        temp = temp + (value.amount * value.count)
+    })
+    setTotalAmount(temp)
+    console.log(totalAmount)
+  },[checkoutValue])
   return (
     <div className={Style.cartContainer}>
          <div className={Style.cartText}>
@@ -25,7 +34,7 @@ function CartPage() {
 
     <h3 style={{color:'#898989'}}>Total Amount</h3>
 
-    <h5 style={{color:'#898989'}}>{checkoutValue[0].count}</h5>
+    <h5 style={{color:'#898989'}}>{totalAmount}</h5>
 
     </div>
 

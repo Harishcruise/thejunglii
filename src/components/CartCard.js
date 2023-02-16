@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Style from './CartCard.module.css'
 import { AiOutlinePlusCircle,AiOutlineMinusCircle } from "react-icons/ai";
 import { BiTrash } from "react-icons/bi";
-import {CheckoutState,setCount} from '../redux/CheckoutSlice'
+import {CheckoutState,setCount,removeCheckoutValue} from '../redux/CheckoutSlice'
 import { useSelector, useDispatch } from "react-redux";
 function CartCard({ticketName,duration,slot,amount,date,id}) {
     const [quantity,setQuantity] = useState(1)
@@ -21,6 +21,12 @@ function CartCard({ticketName,duration,slot,amount,date,id}) {
         else{
             setQuantity(quantity-1)
         }
+    }
+
+    const remove = () =>{
+       dispatch(removeCheckoutValue({
+        id:id,
+       }))
     }
 
     useEffect(()=>{
@@ -45,7 +51,7 @@ function CartCard({ticketName,duration,slot,amount,date,id}) {
                     <div className={Style.slot}>{slot}</div>
                 </div>
                 <div style={{display:"flex",gap:"20px"}}>
-                    <h5 style={{color:'#F0D318'}}>{amount}</h5>
+                    <h5 style={{color:'#F0D318'}}>{amount} RS</h5>
                     <h5 style={{color:'#F0D318'}}>{date}</h5>
                 </div>
             </div>
@@ -60,7 +66,7 @@ function CartCard({ticketName,duration,slot,amount,date,id}) {
           <AiOutlineMinusCircle color='#F0D318' className={Style.icon} onClick={minus}/>
         </div>
 
-        <BiTrash  color='#F0D318' className={Style.icon}/>
+        <BiTrash  color='#F0D318' className={Style.icon} onClick={remove}/>
         </div>
 
 

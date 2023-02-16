@@ -63,6 +63,16 @@
     background-color: #1E1E1E;
 }
 
+.slotBtnActive{
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    border-color: #F0D318;
+    color: black;
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
 .slotBtn:hover{
     color: black;
     background-color: #FFFFFF;
