@@ -168,3 +168,12 @@ abbr[title] {
   line-height: 16px;
   color: #FFFFFF;
 }
+
+.react-calendar__tile--rangeEnd {
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #6f48eb;
+  color: white;
+}
