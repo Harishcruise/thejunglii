@@ -17,7 +17,7 @@ function ReptileBooking() {
           ticketName:"JUNGLII'S REPTILE CRUSH",
           timeSlot:"",
           hours:"",
-          amount:700,
+          amount:999,
           date:moment(dateValue).format('DD-MM-YYYY'),
           count:1
     })
@@ -55,10 +55,10 @@ function ReptileBooking() {
 <div className={Style.cont1}>
        <h4>Morning</h4>
        <div className={Style.btnCont}>
-        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={active === '11.00 AM' ? Style.slotBtnActive : Style.slotBtn}>11.00 A.M</button>
-        <button onClick={()=>(timeSlot("11.30 AM","30Min"))} className={active === '11.30 AM' ? Style.slotBtnActive : Style.slotBtn}>11.30 A.M</button>
-        <button onClick={()=>(timeSlot("12.00 AM","30Min"))} className={active === '12.00 AM' ? Style.slotBtnActive : Style.slotBtn}>12.00 A.M</button>
-        <button onClick={()=>(timeSlot("12.30 AM","30Min"))} className={active === '12.30 AM' ? Style.slotBtnActive : Style.slotBtn}>12.30 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","40Min"))} className={active === '11.00 AM' ? Style.slotBtnActive : Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.30 AM","40Min"))} className={active === '11.30 AM' ? Style.slotBtnActive : Style.slotBtn}>11.30 A.M</button>
+        <button onClick={()=>(timeSlot("12.00 AM","40Min"))} className={active === '12.00 AM' ? Style.slotBtnActive : Style.slotBtn}>12.00 A.M</button>
+        <button onClick={()=>(timeSlot("12.30 AM","40Min"))} className={active === '12.30 AM' ? Style.slotBtnActive : Style.slotBtn}>12.30 A.M</button>
        </div>
      </div>
 
@@ -66,13 +66,13 @@ function ReptileBooking() {
      <div className={Style.cont2}>
        <h4>Afternoon</h4>
        <div className={Style.btnCont}>
-        <button onClick={()=>(timeSlot("2.00 AM","30Min"))} className={active === '2.00 AM' ? Style.slotBtnActive : Style.slotBtn}>2.00 A.M</button>
-        <button onClick={()=>(timeSlot("2.30 AM","30Min"))} className={active === '2.30 AM' ? Style.slotBtnActive : Style.slotBtn}>2.30 A.M</button>
-        <button onClick={()=>(timeSlot("3.00 AM","30Min"))} className={active === '3.00 AM' ? Style.slotBtnActive : Style.slotBtn}>3.00 A.M</button>
-        <button onClick={()=>(timeSlot("3.30 AM","30Min"))} className={active === '3.30 AM' ? Style.slotBtnActive : Style.slotBtn}>3.30 A.M</button>
-        <button onClick={()=>(timeSlot("4.00 AM","30Min"))} className={active === '4.00 AM' ? Style.slotBtnActive : Style.slotBtn}>4.00 A.M</button>
-        <button onClick={()=>(timeSlot("4.30 AM","30Min"))} className={active === '4.30 AM' ? Style.slotBtnActive : Style.slotBtn}>4.30 A.M</button>
-        <button onClick={()=>(timeSlot("5.00 AM","30Min"))} className={active === '5.00 AM' ? Style.slotBtnActive : Style.slotBtn}>5.00 A.M</button>
+        <button onClick={()=>(timeSlot("2.00 AM","40Min"))} className={active === '2.00 AM' ? Style.slotBtnActive : Style.slotBtn}>2.00 A.M</button>
+        <button onClick={()=>(timeSlot("2.30 AM","40Min"))} className={active === '2.30 AM' ? Style.slotBtnActive : Style.slotBtn}>2.30 A.M</button>
+        <button onClick={()=>(timeSlot("3.00 AM","40Min"))} className={active === '3.00 AM' ? Style.slotBtnActive : Style.slotBtn}>3.00 A.M</button>
+        <button onClick={()=>(timeSlot("3.30 AM","40Min"))} className={active === '3.30 AM' ? Style.slotBtnActive : Style.slotBtn}>3.30 A.M</button>
+        <button onClick={()=>(timeSlot("4.00 AM","40Min"))} className={active === '4.00 AM' ? Style.slotBtnActive : Style.slotBtn}>4.00 A.M</button>
+        <button onClick={()=>(timeSlot("4.30 AM","40Min"))} className={active === '4.30 AM' ? Style.slotBtnActive : Style.slotBtn}>4.30 A.M</button>
+        <button onClick={()=>(timeSlot("5.00 AM","40Min"))} className={active === '5.00 AM' ? Style.slotBtnActive : Style.slotBtn}>5.00 A.M</button>
        </div>
      </div>
 
@@ -80,10 +80,10 @@ function ReptileBooking() {
      <div className={Style.cont3}>
        <h4>Evening</h4>
        <div className={Style.btnCont}>
-        <button onClick={()=>(timeSlot("6.00 AM","30Min"))} className={active === '6.00 AM' ? Style.slotBtnActive : Style.slotBtn}>6.00 A.M</button>
-        <button onClick={()=>(timeSlot("6.30 AM","30Min"))} className={active === '6.30 AM' ? Style.slotBtnActive : Style.slotBtn}>6.30 A.M</button>
-        {/* <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
-        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button> */}
+        <button onClick={()=>(timeSlot("6.00 AM","40Min"))} className={active === '6.00 AM' ? Style.slotBtnActive : Style.slotBtn}>6.00 A.M</button>
+        <button onClick={()=>(timeSlot("6.30 AM","40Min"))} className={active === '6.30 AM' ? Style.slotBtnActive : Style.slotBtn}>6.30 A.M</button>
+        {/* <button onClick={()=>(timeSlot("11.00 AM","40Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","40Min"))} className={Style.slotBtn}>11.00 A.M</button> */}
        </div>
      </div>
 
@@ -100,7 +100,7 @@ function ReptileBooking() {
      
      <div>
      <h3>JUNGLII'S REPTILE CRUSH</h3>
-     <h4>30 min  |  ₹399(Pay later)</h4>
+     <h4>40 min  |  ₹999(Pay later)</h4>
      </div>
 
      <img className={Style.img} alt='' width={550} height={350} style={{borderRadius:"10px",borderColor:"#FFFFFF"}} src='https://img1.wsimg.com/isteam/ip/3b365560-5245-47cc-b9ac-77e98d410987/pexels-pixabay-35653.jpg/:/rs=h:%7B640%7D'/>

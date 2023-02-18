@@ -40,7 +40,7 @@ function Booking() {
       <Card.Body>
         <Card.Title>JUNGLII’S FARM FRIENDS</Card.Title>
         <Card.Text>
-        30MIN | 399
+        35MIN | 599
         </Card.Text>
         <button className={Style.bookBtn} onClick={()=>navigate("farmBooking")}>BOOK THIS</button>
       </Card.Body>
@@ -50,7 +50,7 @@ function Booking() {
       <Card.Body>
         <Card.Title>JUNGLII’S REPTILE CRUSH</Card.Title>
         <Card.Text>
-        30MIN | 399
+        40MIN | 999
         </Card.Text>
         <button onClick={()=>navigate("reptileBooking")} className={Style.bookBtn}>BOOK THIS</button>
       </Card.Body>
@@ -60,7 +60,7 @@ function Booking() {
       <Card.Body>
         <Card.Title>JUNGLII’S VIP ZONE</Card.Title>
         <Card.Text>
-        30MIN | 399
+        45MIN | 1499
         </Card.Text>
         <button onClick={()=>navigate("vipBooking")} className={Style.bookBtn}>BOOK THIS</button>
       </Card.Body>
@@ -70,7 +70,7 @@ function Booking() {
       <Card.Body>
         <Card.Title>JUNGLII’S VVIP ZONE</Card.Title>
         <Card.Text>
-        30MIN | 399
+        50MIN | 1999
         </Card.Text>
         <button onClick={()=>navigate("vvipBooking")} className={Style.bookBtn}>BOOK THIS</button>
       </Card.Body>

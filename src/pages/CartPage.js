@@ -1,12 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import CartCard from '../components/CartCard'
 import Style from './CartPage.module.css'
+import CustomModal from '../components/CustomModal'
 import {CheckoutState} from '../redux/CheckoutSlice'
 import { useSelector, useDispatch } from "react-redux";
 function CartPage() {
   const checkoutValue = useSelector(CheckoutState);
-    const dispatch = useDispatch();
     const [totalAmount,setTotalAmount] = useState(0)
+    const [modalShow, setModalShow] = useState(false);
+
+  const modal=()=>{
+
+    if(checkoutValue.length === 0){
+       alert("Please add Item to cart")
+    }
+    else{
+      setModalShow(true)
+    }
+  }  
   useEffect(()=>{
     var temp = 0 ;
     checkoutValue.map((value)=>{
@@ -39,8 +50,11 @@ function CartPage() {
     </div>
 
     <div style={{display:"flex",justifyContent:"flex-end"}}>
-        <button className={Style.checkOutBtn}>Checkout</button>
+        <button className={Style.checkOutBtn} onClick={modal}>Checkout</button>
     </div>
+
+    <CustomModal show={modalShow}
+        onHide={()=>setModalShow(false)} />
     </div>
   )
 }

@@ -17,7 +17,7 @@ function FarmBooking() {
           ticketName:"JUNGLII'S FARM Friends",
           timeSlot:"",
           hours:"",
-          amount:500,
+          amount:599,
           date:moment(dateValue).format('DD-MM-YYYY'),
           count:1
     })
@@ -56,10 +56,10 @@ function FarmBooking() {
      <div className={Style.cont1}>
        <h4>Morning</h4>
        <div className={Style.btnCont}>
-        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={active === '11.00 AM' ? Style.slotBtnActive : Style.slotBtn}>11.00 A.M</button>
-        <button onClick={()=>(timeSlot("11.30 AM","30Min"))} className={active === '11.30 AM' ? Style.slotBtnActive : Style.slotBtn}>11.30 A.M</button>
-        <button onClick={()=>(timeSlot("12.00 AM","30Min"))} className={active === '12.00 AM' ? Style.slotBtnActive : Style.slotBtn}>12.00 A.M</button>
-        <button onClick={()=>(timeSlot("12.30 AM","30Min"))} className={active === '12.30 AM' ? Style.slotBtnActive : Style.slotBtn}>12.30 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","35Min"))} className={active === '11.00 AM' ? Style.slotBtnActive : Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.30 AM","35Min"))} className={active === '11.30 AM' ? Style.slotBtnActive : Style.slotBtn}>11.30 A.M</button>
+        <button onClick={()=>(timeSlot("12.00 AM","35Min"))} className={active === '12.00 AM' ? Style.slotBtnActive : Style.slotBtn}>12.00 A.M</button>
+        <button onClick={()=>(timeSlot("12.30 AM","35Min"))} className={active === '12.30 AM' ? Style.slotBtnActive : Style.slotBtn}>12.30 A.M</button>
        </div>
      </div>
 
@@ -67,13 +67,13 @@ function FarmBooking() {
      <div className={Style.cont2}>
        <h4>Afternoon</h4>
        <div className={Style.btnCont}>
-        <button onClick={()=>(timeSlot("2.00 AM","30Min"))} className={active === '2.00 AM' ? Style.slotBtnActive : Style.slotBtn}>2.00 A.M</button>
-        <button onClick={()=>(timeSlot("2.30 AM","30Min"))} className={active === '2.30 AM' ? Style.slotBtnActive : Style.slotBtn}>2.30 A.M</button>
-        <button onClick={()=>(timeSlot("3.00 AM","30Min"))} className={active === '3.00 AM' ? Style.slotBtnActive : Style.slotBtn}>3.00 A.M</button>
-        <button onClick={()=>(timeSlot("3.30 AM","30Min"))} className={active === '3.30 AM' ? Style.slotBtnActive : Style.slotBtn}>3.30 A.M</button>
-        <button onClick={()=>(timeSlot("4.00 AM","30Min"))} className={active === '4.00 AM' ? Style.slotBtnActive : Style.slotBtn}>4.00 A.M</button>
-        <button onClick={()=>(timeSlot("4.30 AM","30Min"))} className={active === '4.30 AM' ? Style.slotBtnActive : Style.slotBtn}>4.30 A.M</button>
-        <button onClick={()=>(timeSlot("5.00 AM","30Min"))} className={active === '5.00 AM' ? Style.slotBtnActive : Style.slotBtn}>5.00 A.M</button>
+        <button onClick={()=>(timeSlot("2.00 AM","35Min"))} className={active === '2.00 AM' ? Style.slotBtnActive : Style.slotBtn}>2.00 A.M</button>
+        <button onClick={()=>(timeSlot("2.30 AM","35Min"))} className={active === '2.30 AM' ? Style.slotBtnActive : Style.slotBtn}>2.30 A.M</button>
+        <button onClick={()=>(timeSlot("3.00 AM","35Min"))} className={active === '3.00 AM' ? Style.slotBtnActive : Style.slotBtn}>3.00 A.M</button>
+        <button onClick={()=>(timeSlot("3.30 AM","35Min"))} className={active === '3.30 AM' ? Style.slotBtnActive : Style.slotBtn}>3.30 A.M</button>
+        <button onClick={()=>(timeSlot("4.00 AM","35Min"))} className={active === '4.00 AM' ? Style.slotBtnActive : Style.slotBtn}>4.00 A.M</button>
+        <button onClick={()=>(timeSlot("4.30 AM","35Min"))} className={active === '4.30 AM' ? Style.slotBtnActive : Style.slotBtn}>4.30 A.M</button>
+        <button onClick={()=>(timeSlot("5.00 AM","35Min"))} className={active === '5.00 AM' ? Style.slotBtnActive : Style.slotBtn}>5.00 A.M</button>
        </div>
      </div>
 
@@ -81,10 +81,10 @@ function FarmBooking() {
      <div className={Style.cont3}>
        <h4>Evening</h4>
        <div className={Style.btnCont}>
-        <button onClick={()=>(timeSlot("6.00 AM","30Min"))} className={active === '6.00 AM' ? Style.slotBtnActive : Style.slotBtn}>6.00 A.M</button>
-        <button onClick={()=>(timeSlot("6.30 AM","30Min"))} className={active === '6.30 AM' ? Style.slotBtnActive : Style.slotBtn}>6.30 A.M</button>
-        {/* <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button>
-        <button onClick={()=>(timeSlot("11.00 AM","30Min"))} className={Style.slotBtn}>11.00 A.M</button> */}
+        <button onClick={()=>(timeSlot("6.00 AM","35Min"))} className={active === '6.00 AM' ? Style.slotBtnActive : Style.slotBtn}>6.00 A.M</button>
+        <button onClick={()=>(timeSlot("6.30 AM","35Min"))} className={active === '6.30 AM' ? Style.slotBtnActive : Style.slotBtn}>6.30 A.M</button>
+        {/* <button onClick={()=>(timeSlot("11.00 AM","35Min"))} className={Style.slotBtn}>11.00 A.M</button>
+        <button onClick={()=>(timeSlot("11.00 AM","35Min"))} className={Style.slotBtn}>11.00 A.M</button> */}
        </div>
      </div>
 
@@ -101,7 +101,7 @@ function FarmBooking() {
      
      <div>
      <h3>JUNGLII'S FARM Friends</h3>
-     <h4>30 min  |  ₹399(Pay later)</h4>
+     <h4>35 min  |  ₹599(Pay later)</h4>
      </div>
 
      <img alt='' className={Style.img} width={550} height={350} style={{borderRadius:"10px",borderColor:"#FFFFFF"}} src='https://img1.wsimg.com/isteam/ip/3b365560-5245-47cc-b9ac-77e98d410987/download%20(1)-0003.jfif/:/rs=h:%7B640%7D'/>

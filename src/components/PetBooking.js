@@ -18,7 +18,7 @@ function PetBooking() {
           ticketName:"JUNGLII'S PETTING ZONE",
           timeSlot:"",
           hours:"",
-          amount:500,
+          amount:399,
           date:moment(dateValue).format('DD-MM-YYYY'),
           count:1
     })
